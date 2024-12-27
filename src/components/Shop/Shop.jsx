@@ -27,7 +27,7 @@ const Shop = () => {
     const pages = [...Array(numberOfPages).keys()]
     // console.log(pages)
     useEffect(()=>{
-        fetch('http://localhost:5000/productsCount')
+        fetch('https://y-inky-seven.vercel.app/productsCount')
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -36,7 +36,7 @@ const Shop = () => {
 console.log(count)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://y-inky-seven.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [currentPage,itemsPerPage]);

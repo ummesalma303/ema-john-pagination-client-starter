@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Shop></Shop>,
         loader: cartProductsLoader
-        // loader:()=>fetch('http://localhost:5000/productsCount')
+        // loader:()=>fetch('https://y-inky-seven.vercel.app/productsCount')
       },
       {
         path: 'orders',
